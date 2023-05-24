@@ -1,0 +1,39 @@
+/* CSS styling for the navigation bar */
+
+* {
+  font-family: "Outfit", sans-serif;
+  background-color: #f8f8f8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+}

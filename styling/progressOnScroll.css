@@ -1,0 +1,10 @@
+:root {
+  --colorProgress: #9e6f21;
+}
+
+.progress {
+  background-color: var(--colorProgress);
+  height: 8px;
+  position: fixed;
+  inset: 0;
+}

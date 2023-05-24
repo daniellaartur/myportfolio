@@ -1,0 +1,30 @@
+* {
+  font-family: "Outfit", sans-serif;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-line {
+  margin: 10px auto;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.title-footer {
+  font-size: 16px;
+}
+
+.text-small {
+  font-weight: 300;
+  bottom: 0;
+}

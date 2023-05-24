@@ -1,0 +1,28 @@
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 80%;
+  margin: auto ;
+  
+}
+
+.profile-picture {
+  padding-right: 4rem;
+  width: 100%;
+  height: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+}
