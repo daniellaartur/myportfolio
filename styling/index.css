@@ -1,5 +1,4 @@
 /* Default formatting for all page */
-
 * {
  
   box-sizing: border-box;
@@ -51,7 +50,7 @@
 /* Scroll effect */
 .field {
   position: absolute;
-  margin-top: 30rem;
+  margin-top: 28rem;
   align-items: center;
 }
 
