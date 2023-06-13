@@ -123,6 +123,7 @@
 
 .container .btn:hover {
   background-color: #96541e;
+  color: white;
 }
 
 .wrapper {

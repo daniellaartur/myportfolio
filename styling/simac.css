@@ -84,3 +84,42 @@
   font-style: italic;
   color: #a27b5c;
 }
+
+.buttons-interviews {
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-end;
+  
+
+}
+
+.interview-transcript,
+.interview-analysis {
+  padding-top: 0.5rem;
+  border: 2px solid #a27b5c;
+  width: 10rem;
+  text-align: center;
+  height: 2rem;
+  margin-top: -2rem;
+  color: black;
+}
+
+.interview-transcript:hover,
+.interview-analysis:hover {
+  background-color: #a27b5c;
+  color: white;
+}
+
+.view-figma {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 3px solid #a27b5c;
+  color: black;
+  font-weight: 600;
+}
+
+.view-figma:hover{
+  background-color: #a27b5c;
+  color: white;
+}
