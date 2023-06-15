@@ -31,7 +31,7 @@
 .resume-link {
   text-decoration: underline;
   color: black;
-  font-weight: 3 d00;
+  font-weight: 300;
 }
 
 .resume-link::after {
