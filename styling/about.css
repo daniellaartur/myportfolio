@@ -1,28 +1,41 @@
 * {
+  box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;  
+  padding-bottom: 2rem;
   height: 100vh;
   width: 80%;
-  margin: auto ;
-  
+  margin: auto;
 }
 
 .profile-picture {
-  padding-right: 4rem;
-  width: 100%;
-  height: 50%;
+  margin-left: 14rem;
+  padding-right: 2rem;
+  width: 40%;
+  height: 40%;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 20px;
 }
 
 .description {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.resume-link {
+  text-decoration: underline;
+  color: black;
+  font-weight: 3 d00;
+}
+
+.resume-link::after {
+  content: " \2192";
+  display: inline-block;
+  transform: rotate(-45deg);
 }
