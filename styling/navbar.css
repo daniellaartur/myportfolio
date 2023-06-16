@@ -39,3 +39,24 @@
   text-decoration: none;
   color: #333;
 }
+
+/* Media queries for mobile responsiveness */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .navbar-links li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}
