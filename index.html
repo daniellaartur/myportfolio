@@ -20,15 +20,13 @@
     <div class="navbar">
       <div class="navbar-logo">
         <a class="logo" href="/index.html" style="font-size: 16px"
-          >D N L L A .</a
-        >
-        <!-- <img src="logo.png" alt="Logo" width="80" height="80"> Replace "logo.png" with the path to your logo image -->
+          >Daniella Artur
+        </a>
+        <hr class="thin-line" />
       </div>
       <ul class="navbar-links">
+        <li><a href="#aboutMyWork">Work</a></li>
         <li><a href="/aboutMe.html">About me</a></li>
-        <li><a href="/international.html">International Week</a></li>
-        <li><a href="/portfolio.html">Portfolio</a></li>
-        <li><a href="/simac.html">Simac</a></li>
       </ul>
     </div>
 
@@ -36,77 +34,80 @@
 
     <div class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">
-          Crafting Digital Experiences that
-          <span class="animation-text">Delight</span>
-        </h1>
-        <p class="hero-subtitle">Where Imagination Meets Technology</p>
+        <h3 class="typing-demo">
+          Design is creating meaningful experiencies for <s class="strike-text">users</s>
+          <span class="italic-word">people</span>
+        </h3>
       </div>
-      <div class="field">
-        <div class="mouse"></div>
+
+      <!--Mouse scroll animation-->
+      <div class="scroll-downs">
+        <div class="mousey">
+          <div class="scroller"></div>
+        </div>
       </div>
     </div>
 
-    <!--Project row overview-->
-    <h2 class="project-indicator">Projects Overview</h2>
-
-    <div id="projects-container">
-      <a href="/simac.html" class="project-row">
-        <div>
-          <div class="project-title">SIMAC Onboarding</div>
-          <div class="project-description">
-            Improving onboarding experience for non-dutch professionals coming
-            to The Netherlands for work.
-            <span style="color: #96541e"> SIMAC Case Study.</span>
-          </div>
-        </div>
-        <div class="arrow">
+    <!--PROJECT GRID AREA-->
+    <div id="aboutMyWork" class="project-container">
+      <div class="project">
+        <a href="/nfsweb.html">
           <img
-            width="40"
-            height="40"
-            src="https://img.icons8.com/ios/50/right--v1.png"
-            alt="right--v1"
+            class="image-placement"
+            src="images/NFS-mockup.png"
+            alt="Interface Demo for NFS"
           />
+        </a>
+        <div class="bottom">
+          <h2 class="title">Web interface for product demo</h2>
+          <a class="button-work" href="/nfsweb.html">View work </a>
         </div>
-      </a>
-
-      <a href="/international.html" class="project-row">
-        <div>
-          <div class="project-title">International Week</div>
-          <div class="project-description">
-            Embraced a pressure cooker approach, fostering collaborative work
-            with individuals from diverse countries.
-            <span style="color: #96541e"> Charette Case Study.</span>
-          </div>
-        </div>
-        <div class="arrow">
+      </div>
+      <!--Second project-->
+      <div class="project">
+        <a href="/shelterUp.html">
           <img
-            width="40"
-            height="40"
-            src="https://img.icons8.com/ios/50/right--v1.png"
-            alt="right--v1"
+            class="image-placement"
+            src="images/ShelterUP-cover.png"
+            alt="Shelter Up Logo"
           />
+        </a>
+        <div class="bottom">
+          <h2 class="title">Elevating your clubbing experience</h2>
+          <a class="button-work" href="/shelterUp.html">View work </a>
         </div>
-      </a>
+      </div>
+    </div>
 
-      <a href="/portfolio.html" class="project-row">
-        <div>
-          <div class="project-title">Personal Portfolio</div>
-          <div class="project-description">
-            Documenting and showcasing the process of my involvement in various
-            projects throughout the semester.
-            <span style="color: #96541e"> Portfolio Case Study.</span>
-          </div>
-        </div>
-        <div class="arrow">
+    <div class="project-container">
+      <!--Third project-->
+      <div class="project">
+        <a href="/simac.html">
           <img
-            width="40"
-            height="40"
-            src="https://img.icons8.com/ios/50/right--v1.png"
-            alt="right--v1"
+            class="image-placement"
+            src="images/SIMACIN.png"
+            alt="SIMAC IN Onboarding Experience"
           />
+        </a>
+        <div class="bottom">
+          <h2 class="title">Onboarding for non-dutch people</h2>
+          <a class="button-work" href="/simac.html">View work </a>
         </div>
-      </a>
+      </div>
+      <!--Forth project-->
+      <div class="project">
+        <img
+          class="image-zenya"
+          src="images/infoland-cover-zenya.png"
+          alt="Infoland MockUp Design"
+          style="opacity: 50%"
+        />
+
+        <div class="bottom">
+          <h2 class="title">Redesigning a management portal</h2>
+          <!-- <a class="button-work" href="/infoland.html">View work </a> -->
+        </div>
+      </div>
     </div>
 
     <!--Footer area-->
@@ -118,7 +119,9 @@
         </div>
         <div class="right-text">
           <h4 class="title-footer">Lets connect!</h4>
-          <p class="text-small">d.artur@student.fontys.nl</p>
+          <a class="text-small" href="mailto:daniellaartur3@gmail.com"
+            >daniellaartur3@gmail.com</a
+          >
         </div>
       </div>
     </footer>

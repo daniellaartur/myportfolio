@@ -2,8 +2,10 @@
   font-family: "Outfit", sans-serif;
 }
 .footer {
+  margin-top: 6rem;
   padding: 20px;
   text-align: center;
+
 }
 
 .footer-line {
@@ -28,4 +30,5 @@
 .text-small {
   font-weight: 300;
   bottom: 0;
+ color: #776b5d;
 }

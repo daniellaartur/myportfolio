@@ -1,148 +1,176 @@
-/* Default formatting for all page */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,300;1,6..12,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
-* {
-  box-sizing: border-box;
-}
 
 /* Hero section */
+
+
+
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
+  height: 90vh;
 }
 
 .hero-content {
   text-align: center;
 }
 
-.hero-title {
-  font-size: 48px;
-  font-weight: bold;
-}
-
 .hero-subtitle {
-  font-size: 18px;
-  color: #888;
-  padding-top: 1rem;
-}
-
-@keyframes example {
-  from {
-    background-color: coral;
-  }
-  to {
-    background-color: bisque;
-  }
-}
-
-.animation-text {
-  width: 100px;
-  height: 100px;
-  background-color: lavender;
-  animation-name: example;
-  animation-duration: 4s;
-}
-
-/* Scroll effect */
-.field {
-  position: absolute;
-  margin-top: 30rem;
-  align-items: center;
-}
-
-.mouse {
-  width: 50px;
-  height: 90px;
-  border: 3px solid #333;
-  border-radius: 60px;
-}
-.mouse::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  border-radius: 50%;
-  opacity: 1;
-  animation: wheel 2s infinite;
-  -webkit-animation: wheel 2s infinite;
-}
-@keyframes wheel {
-  to {
-    opacity: 0;
-    top: 60px;
-  }
-}
-
-@-webkit-keyframes wheel {
-  to {
-    opacity: 0;
-    top: 60px;
-  }
-}
-
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #eee;
+  font-size: 60px;
+  font-family: "Poiret One", sans-serif;
   color: #444;
-  cursor: pointer;
-  padding: 18px;
+}
+
+.strike-text {
+  font-family: "Poiret One", sans-serif;
+}
+
+.italic-word {
+  color: sienna;
+  font-family: "Playpen Sans", cursive;
+}
+
+
+/*Typing effect*/
+.typing-demo {
   width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: "Poiret One", sans-serif;
+  font-size: 2.5em;
+  color: #444;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/*Mouse Scroll effect*/
+.scroll-downs {
+  bottom: 2rem;
+position: absolute;
+right: 2rem;
+  width: 34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #333;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 20px;
+  border-radius: 25%;
+  background-color: #444;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 
 /*Project overview styling */
-#projects-container {
+
+.project-container {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
 }
 
-.project-indicator {
-  margin-right: 2rem;
-  font-size: 22px;
-  color: #333;
-  text-align: right;
-  text-transform: uppercase;
-  padding-bottom: 4rem;
+.project {
+  width: 60vh;
+  height: 50vh;
+  margin: 4rem;
+  justify-content: center;
 }
 
-.project-row {
+.bottom {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-  height: 25vh;
-  color: black;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.button-work {
+  margin-top: 1rem;
+  width: 10rem;
+  height: 2.2rem;
+  text-align: center;
+  border: 2px solid #272727;
   text-decoration: none;
-  margin: 0rem 2rem 0rem 2rem;
-  transition: background-color 0.3s ease;
+  color: black;
+  padding-top: 0.4rem;
 }
 
-.project-row:hover {
-  background-color: rgb(234, 234, 234);
+.button-work::after {
+  content: " \2192";
+  display: inline-block;
 }
 
-.project-title {
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 1rem;
+.button-work:hover {
+  color: white;
+  background-color: black;
 }
 
-.project-description {
-  font-size: 14px;
-  color: #666;
+.title {
+  background-color: white;
+  color: grey;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  top: 0;
 }
 
-.arrow {
-  margin-right: 2rem;
+.image-placement,.image-zenya {
+  object-fit: cover;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s;
+}
+
+
+
+.image-placement:hover {
+  transform: scale(0.8);
+  cursor:pointer;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

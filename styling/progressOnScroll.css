@@ -4,7 +4,7 @@
 
 .progress {
   background-color: var(--colorProgress);
-  height: 8px;
+  height: 3px;
   position: fixed;
   inset: 0;
 }

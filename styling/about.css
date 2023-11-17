@@ -1,37 +1,35 @@
-* {
-  box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-  padding-bottom: 2rem;
-  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  height: 70vh;
   width: 80%;
   margin: auto;
 }
 
-.profile-picture {
-  margin-left: 14rem;
-  padding-right: 2rem;
-  width: 40%;
-  height: 40%;
-  border-radius: 50%;
-  object-fit: cover;
+.me {
+  margin-right: 2rem;
+  justify-content: flex-end;
+  height: 50vh;
 }
 
 .description {
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .resume-link {
   text-decoration: underline;
-  color: black;
-  font-weight: 300;
+  color: #776b5d;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .resume-link::after {

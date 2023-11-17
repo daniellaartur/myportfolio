@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;600;800&family=Rock+3D&family=Secular+One&display=swap");
+
 .container {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .left-column {
@@ -16,6 +17,7 @@
   flex-basis: 50%;
   margin-left: 50%;
   padding: 20px;
+  height: 100%;
 }
 
 .project-title {
@@ -30,39 +32,32 @@
   color: grey;
 }
 
-.cover-image {
+.cover-image,
+.next, .video-insertion {
   width: 100%;
-  height: 20%;
+  height: 45vh;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-.project-details {
-  font-size: 16px;
-  line-height: 1.5;
-}
 
-.LO-container {
+.duration {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: flex-end;
   padding-bottom: 1.5rem;
 }
 
-.box {
-  width: 12rem;
-  height: 2.8rem;
-  border: 2px solid #000;
-  border-radius: 5px;
-  box-sizing: border-box;
-  text-align: center;
+.time-project {
+  font-size: 13px;
 }
 
 .role {
   text-transform: uppercase;
+  font-style: italic;
   font-weight: 350;
-  font-size: 12px;
-  margin-top: 0;
+  font-size: 14px;
+  margin-bottom: 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -77,68 +72,17 @@
   color: #a27b5c;
 }
 
-.learning-outcome {
-  font-size: 12px;
-}
 .paragraph.concept {
   text-align: center;
   font-style: italic;
-  color: #a27b5c;
+  color: #b0a695;
 }
 
-.buttons-interviews {
-  display: flex;
-  gap: 3rem;
-  justify-content: flex-end;
-}
 
-.interview-transcript,
-.interview-analysis {
-  padding-top: 0.5rem;
-  border: 2px solid #a27b5c;
-  width: 10rem;
-  text-align: center;
-  height: 2rem;
-  margin-top: -2rem;
-  color: black;
-}
-
-.interview-transcript:hover,
-.interview-analysis:hover {
-  background-color: #a27b5c;
-  color: white;
-}
-
-.view-figma {
-  width: 10rem;
-  height: 3rem;
-  background-color: #a27b5c;
-  color: white;
-  font-weight: 600;
-  border: none;
-  margin-bottom: 1rem;
-}
-
-.teacher-reflection {
-  color: black;
-
-  margin-top: -1rem;
-  padding-bottom: 1rem;
-}
-
-.sign {
-  font-family: "Secular One", sans-serif;
-  font-size: 60px;
-  font-weight: 600;
-  color: #a27b5c;
-}
-
-.author {
-  color: grey;
-  font-size: 12px;
-  display: flex;
-  justify-content: flex-end;
-  font-style: italic;
+.line-separation{
+   height: 3px;
+   width: 100%;
+   background-color: #ebe3d5;
 }
 
 @keyframes textMovement {
@@ -151,9 +95,4 @@
   100% {
     transform: translateX(0);
   }
-}
-
-/* Styling for the animated text */
-.quote-feedback .teacher-reflection {
-  animation: textMovement 2s infinite;
 }

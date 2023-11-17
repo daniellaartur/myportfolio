@@ -1,5 +1,9 @@
+//Gets elemenets with class name "collapsible"
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
+
+//for each clicked button under the classname "collapsible", the loop function is called
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
