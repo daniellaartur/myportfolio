@@ -8,13 +8,14 @@
   justify-content: space-between;
   margin: 1.5rem;
   top: 1rem;
+  position: sticky;
 }
 
 .navbar-links {
   list-style-type: none;
   display: flex;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 600;
   color: rgb(104, 104, 104);
 }
